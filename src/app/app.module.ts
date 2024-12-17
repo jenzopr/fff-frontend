@@ -39,47 +39,44 @@ import { PressComponent } from './press/press.component';
 registerLocaleData(localeDe, localeDeExtra);
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    BrowseComponent,
-    CategoryBarComponent,
-    ArticleCardComponent,
-    SearchbarComponent,
-    ArticlePageComponent,
-    ShareMenuComponent,
-    PrivacyPolicyPageComponent,
-    ImprintPageComponent,
-    ContentPageComponent,
-    BackButtonComponent,
-    NoResultsPageComponent,
-    BorderButtonComponent,
-    TypeformFeedbackPageComponent,
-    FooterComponent,
-    TagComponent,
-    SharebuttonComponent,
-    DarkmodetoggleComponent,
-    SnackRecommendationComponent,
-    IntroComponent,
-    FeaturedSnacksComponent,
-    AboutUsComponent,
-    AboutFakeNewsComponent,
-    PressComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    MatDialogModule,
-    BrowserAnimationsModule
-  ],
-  entryComponents: [
-    ShareMenuComponent
-  ],
-  providers: [
-    { provide: LOCALE_ID, useValue: "de" },
-    DataService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        BrowseComponent,
+        CategoryBarComponent,
+        ArticleCardComponent,
+        SearchbarComponent,
+        ArticlePageComponent,
+        ShareMenuComponent,
+        PrivacyPolicyPageComponent,
+        ImprintPageComponent,
+        ContentPageComponent,
+        BackButtonComponent,
+        NoResultsPageComponent,
+        BorderButtonComponent,
+        TypeformFeedbackPageComponent,
+        FooterComponent,
+        TagComponent,
+        SharebuttonComponent,
+        DarkmodetoggleComponent,
+        SnackRecommendationComponent,
+        IntroComponent,
+        FeaturedSnacksComponent,
+        AboutUsComponent,
+        AboutFakeNewsComponent,
+        PressComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        MatDialogModule,
+        BrowserAnimationsModule
+    ],
+    providers: [
+        { provide: LOCALE_ID, useValue: "de" },
+        DataService
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
